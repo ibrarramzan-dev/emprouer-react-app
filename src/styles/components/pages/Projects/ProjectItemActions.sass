@@ -1,0 +1,43 @@
+@import '../../../theme/colors'
+
+.ProjectItemActions-container
+  position: absolute
+  top: 10px
+  right: 14px
+  font-size: 0.88rem
+  color: $theme-dark-gray
+  text-align: right
+
+  div
+    i, span
+      cursor: pointer
+
+  .ProjectItemActions-delete-icon
+    margin-top: 2%
+
+.ant-btn-default
+ color: #fff
+
+.ant-btn-primary
+  background: $color-red
+  color: #fff
+  border: none
+
+.ant-btn-primary:hover
+  background: $color-pink
+
+.ant-btn-primary:focus
+  background: $color-pink
+
+@media (max-width: 1023px)
+  .ProjectItemActions-delete-icon
+    margin-top: 12% !important
+
+@media (min-width: 325px) and (max-width: 425px)
+  .ProjectItemActions-container
+    top: 15px
+    right: 10px
+    font-size: 0.7rem
+  
+  .ProjectItemActions-delete-icon
+    margin-top: 22% !important

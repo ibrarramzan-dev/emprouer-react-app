@@ -1,0 +1,54 @@
+{
+    "env": {
+        "browser": true,
+        "es2021": true,
+        "node": true
+    },
+    "extends": [
+        "plugin:react/recommended",
+        "airbnb",
+        "react-app",
+        "react-app/jest",
+        "airbnb-typescript/base",
+        "plugin:import/typescript",
+        "prettier"
+    ],
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "ecmaVersion": "latest",
+        "sourceType": "module",
+        "project": "./tsconfig.json"
+    },
+    "plugins": [
+        "react",
+        "@typescript-eslint",
+        "prettier",
+        "react-hooks"
+    ],
+    "rules": {
+        "@typescript-eslint/quotes" : [
+            "error",
+            "double",
+            {
+                "avoidEscape": true
+            }
+        ],
+        "react/jsx-uses-react" : "warn",
+        "react/react-in-jsx-scope": "warn",
+        "react/jsx-props-no-spreading": "warn",
+        "no-shadow": "off",
+        "camelcase":"error",
+        "no-duplicate-imports": "error",
+        "react/jsx-pascal-case": ["error", { "allowAllCaps": false, "allowNamespace": true, "allowLeadingUnderscore": true}],
+        "react/jsx-filename-extension": ["warn", { "extensions": [".js", ".jsx",".tsx"] }],
+        "react/function-component-definition": [
+            "warn",
+            {
+              "namedComponents": "function-declaration"
+            }
+          ]
+    }
+}

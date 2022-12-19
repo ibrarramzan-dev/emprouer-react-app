@@ -1,0 +1,69 @@
+@import '../../../theme/colors'
+  
+.ScoreCard-container
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+  min-height: 187px
+  border-radius: 16px
+  padding: 12px 15px 12px 15px
+  color: #fff
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px 0px
+  border-top: 1px solid rgb(237, 237, 237)
+  border-right: 1px solid rgb(237, 237, 237)
+  
+  .ScoreCard-heading
+    position: absolute
+    top: 11px
+    font-size: 20px
+    line-height: 23px
+
+    .ScoreCard-tasks-completed-text
+      font-size: 14px
+
+  .ScoreCard-percentage
+    position: absolute
+    bottom: 20px
+    font-size: 22px
+
+  .ScoreCard-show-tasks-text
+    position: absolute
+    bottom: 10px
+    cursor: pointer
+
+  .ScoreCard-show-tasks-text-business-information-card
+    color: $theme-link-text-color
+
+.ScoreCard-sustainability
+  background: #A0EB5A
+
+.ScoreCard-facility-equipment
+  background: #BFBFBF
+
+.ScoreCard-business-workshop
+  background: #8ED6E7
+
+.ScoreCard-repair-quality
+  background: #F99F1C
+
+.ScoreCard-training
+  background: #322D7B
+
+.ScoreCard-business-info
+  color: $theme-primary-gray
+
+@media (min-width: 1467px)
+  .ScoreCard-percentage
+    font-size: 48px !important
+
+@media (max-width: 767px)
+  .ScoreCard-container
+    width: 260px !important
+
+  .ScoreCard-business-workshop
+    .ScoreCard-heading
+      margin-bottom: 11px
+
+@media (min-width: 325px) and (max-width: 767px)
+  .ScoreCard-percentage
+    font-size: 40px !important

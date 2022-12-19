@@ -1,0 +1,119 @@
+@import '../theme/colors'
+
+.Projects-container
+  padding-right: 2.5rem
+  padding-left: 0.1rem
+  overflow-x: hidden
+
+  .Projects-avg-assessment-score-container
+    width: 100%
+    min-width: 175px
+    height: 100%
+    border-radius: 16px
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16)
+    border-top: 0.5px solid rgb(237, 237, 237)
+    border-left: 1px solid rgb(237, 237, 237)
+
+    .Projects-avg-assessment-score-heading
+      font-size: 16px
+      color: rgb(106, 114, 132)
+      padding: 10px 20px 0 20px
+
+    .Projects-avg-assessment-score
+      text-align: center
+      margin-top: 13px
+
+      .Projects-avg-assessment-score-percentage
+        color: $theme-primary-gray
+        font-size: 32px
+
+  .Projects-count-cards-and-map-container
+    .Projects-map-container
+      padding: 20px
+      font-size: 26px
+      text-align: center
+      color: #3d4047
+      line-height: 300px
+
+  .Projects-test-pause-solutions-card
+    text-align: center
+
+  .Projects-score-cards-row
+    .ScoreCard-container
+      min-height: 135px
+      padding-right: 16px !important
+
+@media (max-width: 870px)
+  .Projects-container
+    padding-right: 0
+
+@media (max-width: 1024px)
+  .Projects-container
+    padding: 0 0.4rem 0 0.2rem !important
+
+@media (min-width: 1600px)
+  .Projects-count-cards-and-map-container
+    margin-top: 15.5px
+
+@media (max-width: 767px)
+  .Projects-heading
+    font-size: 20px !important
+    margin-top: 3px !important
+    margin-bottom: -3px !important
+
+  .ant-row .Projects-score-cards-row
+    flex-wrap: nowrap
+    column-gap: 3.3rem
+    overflow-x: scroll
+    margin-top: 36px
+    flex-direction: row
+    padding-bottom: 13px
+    margin-bottom: -10px
+    justify-content: space-between
+    scrollbar-width: none
+
+  &::-webkit-scrollbar
+    display: none
+
+  .Projects-avg-assessment-score-container
+    padding-bottom: 17px
+
+@media (min-width: 325px) and (max-width: 399px)
+  .ant-row .Projects-score-cards-row
+    column-gap: 6rem
+
+@media (min-width: 400px) and (max-width: 424px)
+  .ant-row .Projects-score-cards-row
+    column-gap: 4rem
+
+@media (min-width: 425px) and (max-width: 449px)
+  .ant-row .Projects-score-cards-row
+    column-gap: 3rem
+
+@media (min-width: 450px) and (max-width: 474px)
+  .ant-row .Projects-score-cards-row
+    column-gap: 2.24rem
+
+@media (min-width: 475px) and (max-width: 499px)
+  .ant-row .Projects-score-cards-row
+    column-gap: 1rem
+
+@media (min-width: 500px) and (max-width: 549px)
+  .ant-row .Projects-score-cards-row
+    column-gap: 0rem
+
+@media (min-width: 550px) and (max-width: 575px)
+  .ant-row .Projects-score-cards-row
+    column-gap: 0
+
+@media (min-width: 576px) and (max-width: 599px)
+  .ant-row .Projects-score-cards-row
+    column-gap: 6.2rem
+
+@media (min-width: 600px) and (max-width: 649px)
+  .ant-row .Projects-score-cards-row
+    column-gap: 5.2rem
+
+@media (min-width: 650px) and (max-width: 699px)
+  .ant-row .Projects-score-cards-row
+    column-gap: 4rem

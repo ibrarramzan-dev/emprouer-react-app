@@ -1,0 +1,434 @@
+@import "../theme/colors"
+@import "../theme/text"
+
+body
+  font-family: "Helvetica LT Std" !important
+  scrollbar-width: thin
+  overflow-x: hidden
+
+p
+  margin: 0
+
+a
+  color: #1890ff
+  text-decoration: none
+
+ul
+  list-style: none
+  padding: 0
+
+h1
+  font-weight: bold
+  color: $light-default-text-color
+
+.light-heading
+  font-weight: bold
+  font-size: 34px
+  color: $light-default-heading-color
+  margin-bottom: 1.2rem
+
+.text-gray
+  color: $light-default-heading-color
+
+.margin-zero
+  margin: 0 !important
+
+.App-link
+  color: #61dafb
+
+.dark-mode-text-color
+  color: #f9f9f9 !important
+
+.dark-mode-text-color
+  color: #f9f9f9 !important
+
+.icon-size
+  font-size: 16px
+
+.active-chip-green
+  background: $theme-success-color !important
+  color: #f7f7f7 !important
+
+.active-chip-black
+  background: #000 !important
+  color: #f7f7f7 !important
+
+.card-sub-heading
+  margin-top: -23px
+  font-size: 12px
+  font-weight: 400
+  margin-top: 1px
+  color: #fff
+
+.page-section-heading
+  font-size: 50px
+  color: $theme-primary-gray
+  margin-bottom: 14.5px
+
+/********* Scrollbar *********/
+
+/* Works on Firefox */
+*
+  scrollbar-width: thin
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar
+  width: 8px
+
+*::-webkit-scrollbar-track
+  background: #f2f2f2
+
+*::-webkit-scrollbar-thumb
+  background-color: #878787
+  border-radius: 20px
+  border-right: 1px solid #f0f0f0
+
+/********* EOF Scrollbar *********/
+
+  
+/********* Form *********/
+
+.big-round-input
+  height: 40px !important
+  border-radius: 26px !important
+
+.ant-form-item-label 
+  margin: 0 0 -10.5px 11.5px
+
+  label
+    color: $light-black
+    font-size: 12px
+    font-weight: bold
+
+.ant-form-item-label > label.ant-form-item-required:not(.ant-form-item-required-mark-optional)::before
+    display: none
+
+.ant-form-item-label > label.ant-form-item-required:not(.ant-form-item-required-mark-optional)::after
+    display: inline-block
+    margin-right: 4px
+    color: #ff4d4f
+    font-size: 14px
+    font-family: SimSun, sans-serif
+    line-height: 1
+    content: '*'
+
+.ant-input-affix-wrapper
+  border: 1px solid $theme-primary-color
+
+.ant-input-affix-wrapper:focus, .ant-input-affix-wrapper-focused
+  border-width: 2px solid red !important
+  box-shadow: rgba(106, 114, 132, 0.2) 0px 3px 6px 0px
+
+.ant-input-affix-wrapper:focus, .ant-input-affix-wrapper-focused
+  border-width: 2px !important
+
+.ant-input-affix-wrapper:not(.ant-input-affix-wrapper-disabled):hover
+  border-width: 2px solid red !important
+  box-shadow: rgba(106, 114, 132, 0.2) 0px 3px 6px 0px
+
+.ant-input
+  border-radius: 16px
+  padding: 15px 15px 15px 23px
+
+.ant-input:focus, .ant-input-focused
+  border: 2px solid $theme-primary-color
+  box-shadow: rgba(106, 114, 132, 0.2) 0px 3px 6px 0px
+  
+.ant-input:hover
+  border-color: $theme-primary-color
+
+/********* EOF Form *********/
+
+
+/********* Card *********/
+
+.ant-card-bordered
+  border-radius: 16px
+  box-shadow: 0px 3px 6px rgba(0,0,0,0.15)
+
+.ant-card-head
+  background: $theme-primary-color
+  border-radius: 16px 16px 0 0
+
+.ant-card-head-title
+  font-weight: bold
+  color: $dark-default-text
+  letter-spacing: 0.08rem
+  font-size: 24px
+  white-space: initial
+
+.card-sub-heading
+  white-space: initial
+
+@media (min-width: 325px) and (max-width: 338px)
+  .ant-card-head-title
+    div
+      &:nth-child(1)
+        font-size: 22px
+
+// additional styles
+.big-input
+  width: 100%
+  height: 54px
+  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.25)
+  border-radius: 16px
+  padding-left: 12px
+
+/********* EOF Card *********/
+
+
+/********* Button *********/
+
+.ant-btn
+  background: $theme-primary-color
+  color: #fff
+
+.ant-btn:hover, .ant-btn:focus
+  color: #fff
+  border-color: $theme-primary-color
+
+.ant-btn-primary
+  background: $theme-primary-color !important
+
+.ant-btn-primary:hover
+  color: #fff
+  background: $theme-primary-color
+
+.ant-btn-dangerous
+  border: red
+
+// additional styles
+.big-button
+  width: 135px
+  height: 54px
+  font-size: 12px
+  border-radius: 16px
+  box-shadow: 0px 4px 9px rgba(0, 0, 0, 0.25)
+
+.danger-button
+  background: #eb1010
+
+.cancel-button
+  background: $theme-primary-color
+
+/********* EOF Button *********/
+
+
+/********* Popconfirm *********/
+
+.ant-popover-inner
+  border-radius: 12px
+
+.ant-popover-buttons
+  button
+    border-radius: 6px
+
+  button:first-of-type:hover
+    background: $theme-primary-color
+    
+  .ant-btn-primary
+    background: $color-red !important
+
+/********* EOF Popconfirm *********/
+
+
+/********* Modal *********/
+  
+.ant-modal
+  width: 48.5% !important
+
+.ant-modal-content
+  border-radius: 16px
+
+  button
+    min-width: 91px
+    border-radius: 16px
+
+.ant-modal-header
+  background: $theme-primary-color
+  border-top-right-radius: 16px
+  border-top-left-radius: 16px
+  white-space: initial
+
+// additional styles
+.antd-modal-heading
+  padding-right: 20px
+  font-size: 1.55rem
+  letter-spacing: 0.015rem
+  text-align: center
+  color: #fff
+  line-height: 1.75rem
+
+.antd-modal-close-icon
+  position: absolute
+  top: 23px
+  right: 18px
+  color: #fff !important
+  font-size: 1.2rem
+  font-weight: bold
+
+/********* EOF Modal *********/
+
+
+/********* Select *********/
+
+.ant-select-arrow
+  display: none
+
+.ant-select:not(.ant-select-disabled):hover .ant-select-selector
+  border-color: $theme-primary-color !important
+
+.ant-select:not(.ant-select-disabled):focus .ant-select-selector
+  border-color: $theme-primary-color !important
+
+.ant-select:not(.ant-select-disabled):focus-within .ant-select-selector
+  border-color: $theme-primary-color !important
+
+.ant-select-focused:not(.ant-select-disabled).ant-select:not(.ant-select-customize-input) .ant-select-selector
+  box-shadow: rgba(106, 114, 132, 0.2) 0px 3px 6px 0px
+  border-width: 2px !important
+
+.ant-select-selection-item
+  color: $theme-primary-gray
+  letter-spacing: 0.02rem
+
+  &:first-of-type
+    font-weight: bold
+
+.ant-select-selection-overflow
+  column-gap: 3.5px
+
+.ant-select-selection-placeholder
+  margin-left: 5.5px
+
+.ant-select-show-search.ant-select:not(.ant-select-customize-input) .ant-select-selector
+  height: 51.0781px
+  padding-left: 10px
+  border-radius: 16px
+
+.ant-select-multiple .ant-select-selection-item
+  border-radius: 16px
+  padding: 3.5px 9px
+  height: auto
+
+/********* EOF Select *********/
+
+
+/********* Drawer *********/
+
+.ant-drawer-header
+  border-bottom: 0
+
+  .ant-drawer-title
+    font-size: $big-text
+    color: $theme-primary-gray
+    font-weight: 400
+    margin: 15px 0 5px -22px
+
+.ant-drawer-footer
+  border-top: 0
+
+  button
+    border-radius: 16px
+    width: fit-content
+    height: 37px
+    color: #fff
+    font-size: 15px
+    border: 0
+
+    &:focus
+      color: #fff
+
+    &:hover
+      background: #fff !important
+      color: $theme-primary-color
+
+/********* EOF Drawer *********/
+
+
+/********* Table *********/
+
+.ant-table
+  border-radius: 16px
+
+.ant-table-container table > thead > tr:first-child th:first-child
+  border-top-left-radius: 16px
+
+.ant-table-container table > thead > tr:first-child th:last-child
+  border-top-right-radius: 16px
+
+.ant-table-thead > tr > th
+  border-bottom: none
+  opacity: 0.85
+  background: $theme-primary-color
+  color: #fff
+
+/********* EOF Table *********/
+
+  
+/********* Swiper *********/
+
+.swiper-button-next:after, .swiper-button-prev:after
+  font-size: 20px !important
+  font-weight: bolder
+  color: $theme-primary-color
+
+/********* EOF Swiper *********/
+
+
+/********* Switch *********/
+
+.ant-switch-checked
+  background: $theme-primary-color
+
+/********* EOF Switch *********/
+
+  
+/********* react-draft-wysiwyg (MyRichTextEditor component in /src/components) *********/
+
+.rdw-editor-wrapper
+  border: 0.01rem solid #d9d9d9
+  border-radius: 16px
+
+  &:hover
+    border-color: $theme-primary-color
+
+  &:focus-within
+    border-width: 2px
+    border-color: $theme-primary-color
+
+.rdw-editor-toolbar
+  border-radius: 16px !important
+  background: #fafafa !important
+  
+.rdw-option-wrapper
+  border-radius: 8px !important
+
+.rdw-block-dropdown
+  border-radius: 8px !important
+  padding-left: 3px
+
+.rdw-fontsize-dropdown
+  border-radius: 8px !important
+  min-width: 49px !important
+  padding-left: 1px
+  padding-right: 4px
+
+.rdw-fontfamily-dropdown
+  border-radius: 8px !important
+  padding-left: 4.5px
+  padding-right: 0
+  
+.rdw-editor-main
+  padding: 0 14px 1px 14px
+  margin-top: -0.5px
+
+/********* EOF react-draft-wysiwyg *********/
+
+
+@media (max-width: 771px)
+  .antd-modal-close-icon
+    position: absolute
+    top: 20px
+    right: 15px
+    color: #e20618

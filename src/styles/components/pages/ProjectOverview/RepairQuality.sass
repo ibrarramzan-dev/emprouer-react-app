@@ -1,0 +1,37 @@
+@import '../../../theme/colors'
+
+.RepairQuality-container
+  .RepairQuality-heading-container
+    display: flex
+    margin-bottom: 12px
+
+    button
+      background: $theme-primary-color
+      border: none
+
+  .RepairQuality-row
+    flex-wrap: wrap
+    column-gap: 15.5px
+    row-gap: 13px
+    
+    .RepairQuality-tasks-progress-card
+      width: 233px
+      height: 341px
+
+    .RepairQuality-row-actions-col-wrapper
+      display: flex
+      align-items: center
+
+
+.RepairQuality-cards
+  width: 255px
+  height: 341px
+
+@media (max-width: 1024px)
+  .RepairQuality-row
+    flex-wrap: nowrap !important
+    padding-bottom: 5px
+    overflow-x: scroll
+
+    &::-webkit-scrollbar
+     display: none 

@@ -1,0 +1,22 @@
+@import '../theme/colors'
+  
+.SearchBar-container
+  display: flex
+  justify-content: center
+  margin-top: 17px
+
+  .SearchBar-search-icon
+    font-size: 33px
+    color: $theme-primary-color
+
+  .SearchBar-input
+    height: 70px
+    border-radius: 16px
+    padding: 0 29px 0 16px
+
+    input
+      padding-left: 8px
+      font-size: 21px
+
+    .ant-input-affix-wrapper:focus, .ant-input-affix-wrapper-focused
+      box-shadow: #000 0px 3px 6px 0px !important

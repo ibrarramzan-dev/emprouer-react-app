@@ -1,0 +1,72 @@
+@import '../../../theme/colors'
+
+.TrainingReportCard-card-container
+  min-width: 233px
+  max-width: 233px
+  height: 341px
+  padding: 0
+
+  .TrainingReportCard-container
+
+    img
+      width: 80%
+      height: 152px
+      margin-top: 30px
+      margin-left: 10px
+    
+    .TrainingReportCard-icon-and-people-text
+      height: 199px
+      
+      .TrainingReportCard-icon-container
+        padding: 0 10px 0 10px
+
+      .TrainingReportCard-people-count-and-text-wrapper
+        margin-left: -13px
+        padding-top: 90px
+
+        .TrainingReportCard-people-count
+          font-size: 30px
+          font-weight: bold
+          text-align: center
+          color: $theme-primary-gray
+
+        .TrainingReportCard-people-text
+          text-align: center
+          color: $theme-primary-gray
+        
+    .TrainingReportCard-task-info
+      height: 144px
+      background: #1cc435
+      margin-top: -0.5px
+      border-bottom-left-radius: 16px
+      border-bottom-right-radius: 16px
+      color: #fff
+      padding: 10px 0 12px 6%
+
+      .TrainingReportCard-heading-text
+        font-size: 20px
+        color: $theme-primary-gray
+        margin-bottom: -5.5px
+
+      .TrainingReportCard-percent-text
+        font-size: 48px
+        margin-top: -8px
+
+      .TrainingReportCard-show-training-modules-text
+        font-weight: 500
+        text-transform: uppercase
+        margin-top: -13px
+
+@media (max-width: 1200px)
+  .TrainingReportCard-card-container
+    width: 255px
+
+@media (min-width: 1600px)
+  .TrainingReportCard-container
+    img
+      width: 65% !important
+      margin-left: 1.7% !important
+
+  .TrainingReportCard-heading-text
+    font-weight: bold
+    letter-spacing: 0.08rem

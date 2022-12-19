@@ -1,0 +1,72 @@
+@import '../../theme/colors'
+@import '../../theme/text'
+  
+.TasksProgressBarCard-card
+  min-width: 233px
+  max-width: 233px
+  height: 340px
+  padding: 0
+  
+.TasksProgressBarCard-container
+  height: 100%
+
+  .TasksProgressBarCard-swiper-and-progress-wrapper
+    position: relative
+    height: 148px
+
+    .TasksProgressBarCard-delete-icon-wrapper
+      position: absolute
+      top: 11px
+      right: 12px
+      display: flex
+      justify-content: center
+      align-items: center
+      width: 25px
+      height: 25px
+      border-radius: 15px
+      background: #fff
+      z-index: 100
+      cursor: pointer
+
+      i
+        color: $theme-primary-gray
+        margin-top: 0.0785rem
+    
+    .TasksProgressBarCard-swiper-wrapper
+      .TasksProgressBarCard-swiper
+        width: 100%
+
+        .TasksProgressBarCard-swiper-slide
+          img
+            width: 100%
+            object-fit: cover
+            border-top-left-radius: 16px
+            border-top-right-radius: 16px
+
+    .TasksProgressBarCard-progress
+      display: block
+      margin-top: -0.59rem
+
+  .TasksProgressBarCard-content-wrapper
+    height: 193px
+    padding: 15px 0 0 12px
+    color: $theme-primary-gray
+
+    .TasksProgressBarCard-title-text
+      font-size: 20px
+      line-height: 23px
+      margin-top: -12px
+
+    .TasksProgressBarCard-tasks-completed-text
+      font-size: 14px
+      margin-top: 1px
+
+    .TasksProgressBarCard-percent-text
+      font-size: $big-text
+      margin-top: -9px
+      margin-bottom: 10px
+
+    .TasksProgressBarCard-show-tasks-text
+      color: $theme-primary-color
+      font-size: 13px
+      cursor: pointer

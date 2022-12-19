@@ -1,0 +1,161 @@
+// containes also MenuPrimaryItem component styling
+  
+.MenuPrimary-container
+  display: none
+  justify-content: left
+  align-items: center
+  position: fixed
+  top: 70px
+  width: 60px
+  height: 100vh
+  background-color: #fff
+  padding-top: 0.75rem
+  border-right: 1px solid #cccccc
+  z-index: 150
+  border-bottom-right-radius: 16px
+
+  &:hover
+    width: 160px
+
+  &:hover
+    .MenuPrimary-nav-item-link-text
+      display: inline
+
+  .MenuPrimary-nav
+    display: flex
+    flex-direction: column
+    align-items: center
+    height: 100%
+    margin-top: 10px
+    scrollbar-width: none
+    
+    &::-webkit-scrollbar
+      height: 6px
+
+    &::-webkit-scrollbar-track
+      background: #fff !important
+      margin-right: 8px
+
+  .MenuPrimary-nav-item
+    width: 100%
+
+  .MenuPrimary-nav-item-link
+    display: flex
+    align-items: center
+    height: 3.5rem
+    transition: 0.6s
+
+    .MenuPrimary-nav-item-icon
+      width: 50px
+      padding: 16px
+      color: #6A7284
+
+      i
+        margin-left: 1px
+
+      img
+        margin-left: 1px
+        padding-right: 10px
+
+    .MenuPrimary-nav-item-icon-active
+      display: flex
+      background: #E5EEFA
+      justify-content: center
+      align-items: center
+      width: 40px
+      height: 40px
+      border-radius: 20px
+      margin-left: 9px !important
+
+      i
+        margin-left: -2px
+        margin-top: 1.5px
+
+      img
+        margin-left: 10px
+        padding-right: 10px
+        padding-top: 12%
+
+    &:hover
+      .MenuPrimary-nav-item-icon
+        background: #ededed
+        border-top-right-radius: 18px
+        border-bottom-right-radius: 18px
+
+      .MenuPrimary-nav-item-link-text
+        color: #194a96 !important
+
+    .MenuPrimary-nav-item-icon-tag
+      margin-left: 2px
+
+  .MenuPrimary-nav-item-link-text
+    margin-left: 1rem
+    display: none
+    color: #989da8 !important
+
+@media (max-width: 1023px)
+  .MenuPrimary-container
+    box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.15)
+    font-weight: bold
+    height: 4.85rem !important
+
+  .MenuPrimary-nav
+    padding: 40px 0
+
+  .MenuPrimary-nav-item-link
+    width: fit-content
+    margin-left: -39px
+
+  .MenuPrimary-nav-item-projects
+    margin-left: 38px !important
+
+@media (min-width: 1024px)
+  .MenuPrimary-container
+    display: flex !important
+    position: fixed !important
+    top: 70px !important
+    width: 60px !important
+    height: 100vh !important
+    background-color: #fff !important
+    transition: width 0.6s ease-in-out !important
+    padding-top: 0.75rem !important
+    border-right: 1px solid #cccccc !important
+    overflow: hidden !important
+    z-index: 100 !important
+
+    &:hover
+      width: 160px !important
+
+    &:hover
+      .MenuPrimary-nav-item-link-text
+        display: inline !important
+    
+  .MenuPrimary-nav
+    display: flex !important
+    justify-content: left !important
+    align-items: center !important
+    flex-direction: column !important
+    height: 100% !important
+    padding-left: 0 !important
+    margin-top: 0 !important
+
+  .MenuPrimary-nav-item
+    width: 100% !important
+
+  .MenuPrimary-nav-item-link
+    display: flex !important
+    align-items: center !important
+    height: 3.5rem !important
+    transition: 0.6s !important
+
+  .MenuPrimary-nav-item-link-text
+    margin-left: 1rem !important
+    display: none !important
+
+.MenuPrimary-nav-item-link-text-hover:hover
+  display: inline
+  margin-left: 1.5rem
+
+@media (min-width: 325px) and (max-width: 371px)
+  .MenuPrimary-container
+    width: 90vw !important

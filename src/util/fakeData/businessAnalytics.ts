@@ -1,0 +1,73 @@
+const analytics = {
+  productiveStaffRatio: {
+    data: {
+      adminStaff: {
+        manager: 2.5,
+        officeManager: 0,
+        reception: 0,
+        estimator: 0,
+        productionManager: 0,
+        partsManager: 0,
+        detailer: 0,
+      },
+      totalAdminStaff: 2.5,
+      productionStaff: {
+        bodyShopForeman: 255,
+        removePlusRefitTechnician: 0,
+        bodyShopTechnician: 0,
+        bodyShopApprentice: 0,
+        mechanicTechnicians: 0,
+        paintShopForeman: 0,
+        paintPreparationTechnicians: 0,
+        paintShopTechnicianApplication: 0,
+        paintShopTechnicianColorMatch: 0,
+        paintShopApprentice: 1,
+        polisher: 2,
+      },
+      totalProductiveStaff: 130,
+      workingHours: {
+        mon: 8,
+        tue: 8,
+        wed: 4,
+        thu: 8,
+        fri: 8,
+        sat: 0,
+        sun: 0,
+      },
+      productiveStaffRatio: "1:52.0",
+      paintShopTechniciansRatio: "510.0:1",
+    },
+    info: {
+      productiveStaffRatio: "1:52.0",
+      paintShopTechniciansRatio: "510.0:1",
+    },
+  },
+  facilityCapacity: {
+    data: {
+      estimatingBays: 0,
+      mechanicalBays: 4,
+      dedicatedRemovePlusRefitBays: 3,
+      lightRepairBays: 1,
+      heavyRepairBays: 2,
+      dedicatedAluminiumBays: 2,
+      standardPreparationBays: 90,
+      semiDowndraftPreparationBays: 1,
+      fullDowndraftPreparationBays: 0,
+      maskingBays: 0,
+      combiSprayBoothStandard: 2,
+      combiSprayBoothInfrared: 0,
+      sprayBoothSeparateDrying: 0,
+      polishingBays: 2,
+      washBays: 1,
+    },
+    info: {
+      currentAverageJobValueIn: 1000,
+      currentAvgJobValue: 1000,
+      currentAvgWeeklyJobs: 12,
+      projectedWeeklyJobs: 49,
+      weeklyRevenueGrowthOpportunity: 37000.0,
+    },
+  },
+}
+
+export default analytics

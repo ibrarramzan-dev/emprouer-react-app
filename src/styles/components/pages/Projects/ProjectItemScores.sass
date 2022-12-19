@@ -1,0 +1,66 @@
+@import '../../../theme/colors'
+
+.ProjectItemScores-container
+  display: flex
+
+  .ProjectItemScores-last30Day-score
+    margin-right: 7%
+  
+    img
+      position: absolute
+      opacity: 0.65
+
+  .ProjectItemScores-progress-content-wrapper
+    padding-top: 6%
+    height: 60px
+
+    .ProjectItemScores-progress-percent
+      color: $theme-darker-gray
+      font-weight: bold
+
+    .ProjectItemScores-progress-text
+      font-size: 12px
+      text-align: center      
+      padding: 0 20px
+
+@media (max-width: 1023px)
+  .ProjectItemScores-container
+    justify-content: center
+
+    .ProjectItemScores-last30Day-score
+      margin-right: 5% !important
+
+  .ProjectItemScores-last30Day-score
+    margin-right: 0 !important
+
+@media (min-width: 768px) and (max-width: 1293px)
+  .ProjectItemScores-container
+    justify-content: left
+    margin-left: 0.1rem
+
+@media (min-width: 576px) and (max-width: 652px)
+  .ProjectItemScores-container
+    margin-left: -1.9rem
+
+@media (min-width: 1023px) and (max-width: 1087px)
+  .ProjectItemScores-container
+    margin-left: -1.5rem
+
+@media (min-width: 1200px) and (max-width: 1600px)
+  .ProjectItemScores-container
+    justify-content: center
+    margin-left: -1.4rem
+
+@media (min-width: 1600px) and (max-width: 1768px)
+  .ProjectItemScores-container
+    justify-content: left
+    margin-left: 1.8rem
+
+@media (min-width: 1769px) and (max-width: 1999px)
+  .ProjectItemScores-container
+    margin-left: 3.1rem
+
+@media (min-width: 2000px) and (max-width: 2560px)
+  .ProjectItemScores-container
+    justify-content: center
+    margin-left: 5.2rem

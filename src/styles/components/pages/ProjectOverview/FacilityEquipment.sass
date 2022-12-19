@@ -1,0 +1,20 @@
+.FacilityEquipment-row
+  .ant-col-xs-6
+    flex: 0
+
+@media (max-width: 1024px)
+  .FacilityEquipment-row
+    padding: 0 4px
+    flex-wrap: nowrap !important
+    padding-bottom: 5px
+    overflow-x: scroll
+    column-gap: 12px
+    
+    .ant-col-xs-6
+      min-width: 233px
+      max-width: 233px
+      height: 340px
+
+    &::-webkit-scrollbar
+     display: none 
+  

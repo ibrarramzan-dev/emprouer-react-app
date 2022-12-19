@@ -1,0 +1,123 @@
+@import '../../../theme/colors'
+
+.SearchProject-container
+  .SearchProject-search-sort-filter
+    height: 54px
+    margin-top: 17px
+    margin-bottom: 17px
+
+    .SearchProject-dropdown
+        .MySelect-arrow-down-icon-wrapper
+          top: 2.5px
+          right: -0.5px
+
+    .ant-select:not(.ant-select-customize-input) .ant-select-selector
+      height: 54px
+      border-radius: 25px !important
+      border-color: #fca165ea !important
+      box-shadow: -0.5px 0.5px 4px rgba(0, 0, 0, 0.15)
+
+      &:hover
+        border-color: #ffb584e1 !important
+        
+    .ant-select-single.ant-select-show-arrow .ant-select-selection-item, .ant-select-single.ant-select-show-arrow .ant-select-selection-placeholder
+      display: flex
+      align-items: center
+      margin-right: 15px
+      padding-left: 7%
+
+    .SearchProject-projects-list
+      margin-top: 16px
+
+      .SearchProject-edit-project-modal-select
+      
+    .ant-select-selection-placeholder
+      font-weight: bold
+      letter-spacing: 0.0425rem
+
+    .ant-select-arrow
+      margin-right: 8px
+
+.SearchProject-edit-project-modal-dropdown
+  padding: 5px 30px 15px 30px
+
+  .ant-select:not(.ant-select-customize-input) .ant-select-selector
+    height: 37px
+    border-radius: 16px !important
+
+  .ant-select-single.ant-select-show-arrow .ant-select-selection-item, .ant-select-single.ant-select-show-arrow .ant-select-selection-placeholder
+    display: flex
+    align-items: center
+    padding-left: 5px
+
+  .ant-select:not(.ant-select-disabled):hover .ant-select-selector
+    border-color: $theme-primary-color
+
+  .ant-select .ant-select-selector
+    border-color: $theme-primary-color
+
+  .ant-select-selection-item
+    padding-left: 7px !important
+
+@media (min-width: 768px)
+  .SearchProject-search
+    padding-right: 6%
+
+@media (max-width: 767px)
+  .SearchProject-projects-list
+    margin-top: 81px !important
+    
+@media (min-width: 325px) and (max-width: 352px)
+  .SearchProject-container
+    .ant-select-selector
+      font-size: 12px
+      white-space: initial !important
+
+
+@media (min-width: 325px) and (max-width: 399px)
+  .SearchProject-container
+    .ant-select-single.ant-select-show-arrow .ant-select-selection-item, .ant-select-single.ant-select-show-arrow .ant-select-selection-placeholder
+      font-size: 69% !important
+      padding-left: 2% !important
+
+@media (min-width: 400px) and (max-width: 474px)
+  .SearchProject-container
+    .ant-select-single.ant-select-show-arrow .ant-select-selection-item, .ant-select-single.ant-select-show-arrow .ant-select-selection-placeholder
+      font-size: 80% !important
+
+@media (min-width: 768px) and (max-width: 815px)
+  .SearchProject-container
+    .ant-select-single.ant-select-show-arrow .ant-select-selection-item, .ant-select-single.ant-select-show-arrow .ant-select-selection-placeholder
+      font-size: 64%
+      padding-left: 2% !important
+
+@media (min-width: 816px) and (max-width: 849px)
+  .SearchProject-container
+    .ant-select-single.ant-select-show-arrow .ant-select-selection-item, .ant-select-single.ant-select-show-arrow .ant-select-selection-placeholder
+      font-size: 67%
+
+@media (min-width: 850px) and (max-width: 915px)
+  .SearchProject-container
+    .ant-select-single.ant-select-show-arrow .ant-select-selection-item, .ant-select-single.ant-select-show-arrow .ant-select-selection-placeholder
+      font-size: 70%
+
+@media (min-width: 916px) and (max-width: 1000px)
+  .SearchProject-container
+    .ant-select-single.ant-select-show-arrow .ant-select-selection-item, .ant-select-single.ant-select-show-arrow .ant-select-selection-placeholder
+      font-size: 80%
+
+@media (min-width: 1001px) and (max-width: 1099px)
+  .SearchProject-container
+    .ant-select-single.ant-select-show-arrow .ant-select-selection-item, .ant-select-single.ant-select-show-arrow .ant-select-selection-placeholder
+      font-size: 76%
+      padding-left: 2% !important
+
+@media (min-width: 1100px) and (max-width: 1175px)
+  .SearchProject-container
+    .ant-select-single.ant-select-show-arrow .ant-select-selection-item, .ant-select-single.ant-select-show-arrow .ant-select-selection-placeholder
+      font-size: 78%
+
+@media (min-width: 1176px) and (max-width: 1250px)
+  .SearchProject-container
+    .ant-select-single.ant-select-show-arrow .ant-select-selection-item, .ant-select-single.ant-select-show-arrow .ant-select-selection-placeholder
+      font-size: 85%

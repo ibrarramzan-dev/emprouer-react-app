@@ -1,0 +1,47 @@
+@import '../../../theme/colors'
+
+.NoteView-container
+  .NoteView-note-title
+    font-size: 15px
+    margin-bottom: 9px
+    font-weight: 600
+    color: $theme-primary-gray
+
+  .NoteView-note-content
+    margin-bottom: 15px
+
+  .NoteView-text-with-icon-row
+    margin-bottom: 30px
+
+    .ant-col
+      &:first-of-type
+        flex-basis: 8%
+
+      &:last-of-type
+        flex-basis: 92%
+
+    .NoteView-tagged-users-chip-wrapper
+      display: flex
+      flex-wrap: wrap
+      column-gap: 10px
+      row-gap: 9px
+      margin-top: 0.6rem
+
+      .NoteView-tagged-users-chip
+        width: fit-content
+        height: 20px
+        padding: 12px
+        background: $theme-primary-color
+        color: #fff
+
+    .NoteView-visibility-text-icon
+      margin-left: 0.0937rem
+
+    .NoteView-visibility-text
+      margin-top: 0.122rem
+
+  .NoteView-last-edit-and-editor-row
+    margin-top: 30px
+
+    .NoteView-last-edit-and-editor-value
+      margin-top: -6px

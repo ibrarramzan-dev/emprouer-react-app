@@ -1,0 +1,52 @@
+@import '../../../theme/colors'
+  
+.BusinessWPCircle-container
+  height: 80px
+  width: 80px
+  border-radius: 50%
+  text-align: center
+  border: 6px solid #ffffff !important
+  box-shadow: 0px 0px 4px 4px rgba(0, 0, 0, 0.10)
+  cursor: pointer
+  position: relative
+  display: flex
+  justify-content: center
+  align-items: center
+  margin: 20px 40px
+  z-index: 2000
+
+  .BusinessWPCircle-inner-circle
+    width: 100%
+    height: 100%
+    border-radius: 50%
+    display: flex
+    justify-content: center
+    align-items: center
+    color: #fff
+
+    .BusinessWPCircle-key-icon-img
+      margin-right: 1px
+
+    .BusinessWPCircle-inner-circle-percentage
+      font-size: 18px
+      font-weight: bold
+
+  .BusinessWPCircle-inner-circle-color-default
+    background: $theme-primary-color
+
+  .BusinessWPCircle-inner-circle-color-orange
+    background: #f99f1c
+
+  .BusinessWPCircle-inner-circle-color-red
+    background: #be0312
+
+  .BusinessWPCircle-inner-circle-color-green
+    background: #1cc435
+
+@media (min-width: 1600px)
+  .BusinessWPCircle-container
+    height: 120px
+    width: 120px
+
+  .BusinessWPCircle-inner-circle-percentage
+    font-size: 24px !important

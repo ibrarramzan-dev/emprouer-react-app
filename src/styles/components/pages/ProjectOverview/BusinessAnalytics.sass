@@ -1,0 +1,104 @@
+// containes also ProductiveStaffRatio and FacilityCapacity
+
+@import '../../../theme/colors'
+@import '../../../theme/text'
+
+.BusinessAnalytics-cards-heading
+  font-size: 20px
+  font-weight: bold
+  color: $theme-primary-gray
+  padding: 0 18px
+
+.BusinessAnalytics-cards
+  min-height: 783px
+  height: 1136px
+  padding: 12px 0 0 0
+  color: $theme-primary-gray
+
+  .BusinessAnalytics-list-container
+    margin-top: 8px
+
+    ul
+      li
+        display: flex
+        justify-content: space-between
+        padding: 2.5px 16px 2.5px 18px
+
+        &:nth-child(odd)
+          background: $theme-list-item-bg-color
+
+  .BusinessAnalytics-cards-red-box
+    min-height: 142.5px
+    max-height: 142.5px
+    background: #be0312
+    color: #fff
+    padding: 18px 9px 10px 9px
+    border-bottom-left-radius: 16px
+
+    p
+      text-align: center
+
+      &:last-of-type
+        font-size: $big-text
+        margin-top: -5px
+    
+  .BusinessAnalytics-cards-green-box
+    min-height: 142.5px
+    max-height: 142.5px
+    background: #1cc435
+    color: #fff
+    padding: 18px 9px 10px 9px
+    border-bottom-right-radius: 16px
+
+    p
+      text-align: center
+
+      &:last-of-type
+        font-size: $big-text
+        margin-top: -5px
+    
+  .BusinessAnalytics-cards-gray-box
+    background: #d3d3d3
+    color: $theme-primary-gray
+    padding: 18px 0 10px 0
+    border-bottom-left-radius: 16px
+    border-bottom-right-radius: 16px
+    padding: 18px 0 10px 0
+
+    p
+      text-align: center
+
+      &:last-of-type
+        font-size: $big-text
+        margin-top: -5px
+        padding: 0 5px
+        
+@media (max-width: 731px)
+  .BusinessAnalytics-row
+    flex-wrap: nowrap !important
+    overflow-x: scroll
+    overflow-y: hidden
+    padding-bottom: 4px
+
+    .BusinessAnalytics-row-col
+      min-width: 330px !important
+
+      .BusinessAnalytics-cards
+        height: auto !important
+
+    &::-webkit-scrollbar
+     display: none 
+
+  .BusinessAnalytics-cards
+    min-height: auto !important
+
+@media (min-width: 1200px)
+  .BusinessAnalytics-cards
+    height: 787px !important
+    min-height: 830px
+
+  .BusinessAnalytics-cards-red-box
+    min-height: 94px !important 
+
+  .BusinessAnalytics-cards-green-box
+    min-height: 94px !important 

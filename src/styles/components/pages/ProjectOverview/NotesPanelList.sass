@@ -1,0 +1,51 @@
+@import '../../../theme/colors'
+
+.NotesPanelList-container
+  .NotesPanelList-item-row
+    padding: 20px 25px 20px 16px
+    color: $theme-primary-gray
+
+    .NotesPanelList-item-main-info-wrapper
+      display: flex
+
+      .NotesPanelList-item-main-info-file-text-icon
+        font-size: 36px
+
+      .NotesPanelList-item-main-info-text
+        margin-left: 10px
+        margin-top: -0.23rem
+
+    .NotesPanelList-item-last-edit-and-editor-value
+      margin-top: -6px
+
+  ul
+    li
+      cursor: pointer
+
+      &:nth-child(odd)
+        background: $theme-list-item-bg-color
+        border-radius: 16px
+
+  .NotesPanelList-add-note-row
+    display: flex
+    justify-content: center
+    margin-top: 1.5rem
+    cursor: pointer
+
+    .NotesPanelList-add-note-icon-text-wrapper
+      text-align: center
+      color: $theme-primary-gray
+
+.NotesPanelList-view-note-drawer-delete-btn
+  background: #fff !important
+  color: $color-red !important
+
+  &:hover
+    font-weight: 500
+
+.NotesPanelList-view-note-drawer-edit-btn
+  background: #fff !important
+  color: $theme-primary-color !important
+
+  &:hover
+    font-weight: 500

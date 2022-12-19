@@ -1,0 +1,19 @@
+@import '../../../theme/colors'
+
+.Training-row
+  flex-wrap: wrap
+  column-gap: 15.5px
+  row-gap: 13px
+
+  .Training-tasks-progress-card
+    width: 233px
+    height: 341px
+
+@media (max-width: 1024px)
+  .Training-row
+    flex-wrap: nowrap !important
+    padding-bottom: 5px
+    overflow-x: scroll
+
+    &::-webkit-scrollbar
+     display: none 
