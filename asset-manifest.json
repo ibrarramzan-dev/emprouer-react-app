@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/emprouer-react-app/static/css/main.6dea05f7.css",
-    "main.js": "/emprouer-react-app/static/js/main.0c77b04a.js",
+    "main.js": "/emprouer-react-app/static/js/main.95d089b6.js",
     "static/js/787.cda612ba.chunk.js": "/emprouer-react-app/static/js/787.cda612ba.chunk.js",
     "static/media/HelveticaLTStd-Roman.svg": "/emprouer-react-app/static/media/HelveticaLTStd-Roman.6b11cb137a41dfcec5b3.svg",
     "static/media/HelveticaLTStd-Roman.eot": "/emprouer-react-app/static/media/HelveticaLTStd-Roman.cad880f8593551df57d8.eot",
@@ -34,11 +34,11 @@
     "static/media/start-date.svg": "/emprouer-react-app/static/media/start-date.f770fc26b06a1870c8c5db09714d6786.svg",
     "static/media/menu_black_24dp.svg": "/emprouer-react-app/static/media/menu_black_24dp.f26633bfd69884d8aad588c4f58d51a6.svg",
     "main.6dea05f7.css.map": "/emprouer-react-app/static/css/main.6dea05f7.css.map",
-    "main.0c77b04a.js.map": "/emprouer-react-app/static/js/main.0c77b04a.js.map",
+    "main.95d089b6.js.map": "/emprouer-react-app/static/js/main.95d089b6.js.map",
     "787.cda612ba.chunk.js.map": "/emprouer-react-app/static/js/787.cda612ba.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.6dea05f7.css",
-    "static/js/main.0c77b04a.js"
+    "static/js/main.95d089b6.js"
   ]
 }
